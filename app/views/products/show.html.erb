@@ -1,1 +1,23 @@
-<h1>Product</h1>
+<h1>
+Item #<%= @product.id %>
+</h1>
+
+<p>
+  Product:
+  <br>
+<%= @product.name %>
+</p>
+
+<p>
+Description:
+<br>
+<%= @product.description %>
+</p>
+
+<p>
+Price:
+<br>
+<%= @product.price_in_cents %>
+</p>
+
+<%= link_to "Back to Products", products_path %>
